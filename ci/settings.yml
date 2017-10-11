@@ -1,0 +1,20 @@
+---
+meta:
+  name: concourse-cicd-poc
+  initial-version: 0.0.1
+  target: ci
+  url: http://concourse.service
+  docker: 
+    repository: thecase/(( grab meta.name ))
+    email:    (( vault "secret/dockerhub:email" ))
+    username: (( vault "secret/dockerhub:username" ))
+    password: (( vault "secret/dockerhub:password" ))
+  github:
+    owner: TheCase
+    private_key: (( vault "secret/github:private_key" ))
+    access_token: (( vault "secret/github:access_token" ))
+  nomad:
+    url: http://nomad.service.consul:4646
+  slack:
+    webhook: (( vault "secret/concourse:slack_webhook" ))
+
