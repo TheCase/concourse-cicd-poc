@@ -5,7 +5,7 @@ meta:
   target: ci
   url: http://concourse.service
   docker: 
-    repository: thecase/(( grab meta.name ))
+    repository: thecase/concourse-cicd-poc
     email:    (( vault "secret/dockerhub:email" ))
     username: (( vault "secret/dockerhub:username" ))
     password: (( vault "secret/dockerhub:password" ))
