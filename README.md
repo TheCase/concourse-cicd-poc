@@ -1,4 +1,7 @@
-**concourse-cicd-poc**
+#### Notice!
+I have a deeper dive that handles semver with Git tags as well as development branches and Pull requests: [https://github.com/TheCase/site-index](https://github.com/TheCase/site-index/tree/develop)  
+
+## concourse-cicd-poc
 
 ![](./example.png)
 
